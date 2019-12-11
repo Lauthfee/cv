@@ -34,6 +34,8 @@ h1 {
 }
 
 .white-card {
+  display: inline-block;
+  text-align: center;
   background-color: white;
   color: black;
   border-radius: 10px;
@@ -72,13 +74,17 @@ a:active {
 }
 
 .white-card p {
-  text-indent: 15px;
   text-align: justify;
   text-justify: inter-word;
 }
 
 
 p.center {
+  text-align: center;
+  margin: 0px;
+}
+
+.center {
   text-align: center;
   margin: 0px;
 }
@@ -233,7 +239,7 @@ font-size: 24px
   }
 }
 
-.row {
+/*.row {
   overflow: scroll;
   width: 100%;
   margin: 0px;
@@ -281,7 +287,7 @@ font-size: 24px
 .tile:hover ~ .tile {
   -webkit-transform: translate3d(125px, 0, 0);
           transform: translate3d(125px, 0, 0);
-} 
+}*/ 
 
 .footer {
   background: #F4F4F4;
@@ -290,7 +296,7 @@ font-size: 24px
   justify-content: space-between;
   height: 80px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: #9F9F9F;
 }
 .footer-links {
   display: flex;
@@ -298,7 +304,7 @@ font-size: 24px
 }
 .footer-links a {
   color: black;
-  opacity: 0.15;
+  opacity: 0.35;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
