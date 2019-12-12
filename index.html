@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" type="text/css" href="progressbar_style.css">
     <meta charset="UTF-8">
     <title>Lotfi Kaced</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -90,13 +90,13 @@
     <h2>EDUCATION</h2>
     <table>
       <tr>
-        <td><div class="login"><a><strong>FULL-STACK WEB AND APP DEVELOPMENT</strong><p>Le Wagon / Montreal</p></a></div>
+        <td><div class="login"><a><strong>FULL-STACK WEB DEVELOPMENT</strong><p>Le Wagon / Montreal</p></a></div>
           <ul>
-            <li>Understanding the core concepts of object-oriented programming</li>
+            <li>Understanding the core concepts of <strong>object-oriented programming</strong></li>
             <li>Structuring a software following design patterns like MVC</li>
-            <li>Designing a relational database and building queries with SQL, building a UI (User Interface) following atomic design framework</li>
-            <li>Coding a CSS library using recent techniques like flexbox or CSS grid</li>
-            <li>Using the latest version of Javascript as a second programming language</li>
+            <li>Designing a relational database and building queries with <strong>SQL</strong>, building a UI (User Interface) following atomic design framework</li>
+            <li>Coding an <strong>HTML</strong> and <strong>CSS</strong> library using recent techniques like flexbox or CSS grid</li>
+            <li>Using the latest version of <strong>Javascript</strong> as a second programming language</li>
             <li>Test Driven Development to cover an application's code with unit tests</li>
           </ul>
         </td>
@@ -138,27 +138,27 @@
     <button class="w3-button w3-blue" onclick="move()">Click Me</button> 
 
   <script>
-  function move() {
-    var elem = document.getElementById("myBar");   
-    var width = 20;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 83) {
-        clearInterval(id);
-      } else {
-        width++; 
-        elem.style.width = width + '%'; 
-        elem.innerHTML = width * 1  + '%';
+    function move() {
+      var elem = document.getElementById("myBar");   
+      var width = 20;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 83) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+        }
       }
     }
-  }
   </script>
 </div>
 
 
 <div class="w3-container">
 
-  <p style="text-align: center;">Other <i class="fab fa-windows"></i></p>
+  <p style="text-align: center;">Microsoft Office & Office 365 <i class="fab fa-microsoft"></i></p>
 
     <div class="w3-light-grey">
       <div id="myBar2" class="w3-container w3-round-xlarge w3-blue w3-center" style="width:0%">0%</div>
@@ -167,20 +167,20 @@
     <button class="w3-button w3-blue" onclick="move()">Click Me</button> 
 
   <script>
-  function move() {
-    var elem = document.getElementById("myBar2");   
-    var width = 20;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 87) {
-        clearInterval(id);
-      } else {
-        width++; 
-        elem.style.width = width + '%'; 
-        elem.innerHTML = width * 1  + '%';
+    function move() {
+      var elem = document.getElementById("myBar2");   
+      var width = 20;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 87) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+        }
       }
     }
-  }
   </script>
 </div>
 
