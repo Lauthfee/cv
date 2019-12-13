@@ -1,0 +1,2 @@
+.reveal a p {display:none;}
+.reveal a:hover p {display:block;}

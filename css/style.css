@@ -1,7 +1,9 @@
 @import url("components/cards.css");
-@import url("components/btn.css");
-@import url("components/banner.css");
+@import url("components/reveal.css");
+@import url("components/avatar.css");
+@import url("components/table.css");
 @import url("components/footer.css");
+@import url("components/progressbar.css");
 
 
 body {
@@ -17,27 +19,12 @@ h1 {
   margin-bottom: 0px;
 }
 
-.login a p {display:none;}
-.login a:hover p {display:block;}
-
-.header img {
-  float: right;
-  display: inline-block;
-}
-
-.profile_picture {
-  margin: 30px auto 32px auto;
-}
-
-.profile_picture {
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: inline-block;
+h2 {
+  text-align: center;
 }
 
 .white-card {
+  margin: 32px auto;
   display: inline-block;
   text-align: center;
   background-color: white;
@@ -45,17 +32,18 @@ h1 {
   border-radius: 10px;
   width: 300px;
   padding: 24px;
-  margin: 32px auto;
+}
+
+.white-card i {
+  font-size: 18px;
+  color: black;
 }
 
 .header-list {
   text-align: left;
   list-style: none;
 }
-.white-card i {
-  font-size: 18px;
-  color: black;
-}
+
 
 a:link {
   color: black;
@@ -93,131 +81,6 @@ p.center {
   margin: 0px;
 }
 
-.marg {
-  margin: 10px auto 0px auto;
-}
-
-h2 {
-  text-align: center;
-
-}
-
-.button {
-  color: white;
-  background-color: #001e6b;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button:hover {
-  color: white;
-  background-color: black;
-}
-
-.list {
-  text-align: left;
-}
-
-table td {
-  width:100%;
-  text-align: left;
-}
-
-/*.social {
-  list-style: none;
-  padding-left: 0px;
-  margin: 0px 0px 0px 0px;
-}
-
-.social a {
-  color: blue;
-  font-size: 40px;
-  margin: 8px;
-}
-
-.social a:hover {
-  color: black;
-
-}
-.social li {
-  display: inline-block;
-}*/
-
-.PS {
-  font-size: 12px;
-}
-
-
-.signature {
-font-family: 'Montez', cursive;
-font-size: 24px
-}
-
-/*.slide-container {
-  width: 400px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  text-align: center;
-}
-
-.image-container {
-  width: 2800px;
-  height: 300px;  
-  position: relative;
-  transition: left 2s;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-  transform-style: none;
-}
-
-.button-container {
-  top: -20px;
-  position: relative;
-}
-
-.slider-button {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background-color: white;
-
-}
-
-.slider-image {
-  float: left;
-  margin: 0px;
-  padding: 0px;
-}
-
-#slider-image-1:target ~ .image-container{
-  left: 0px;
-}
-#slider-image-2:target ~ .image-container{
-  left: -400px;
-}
-#slider-image-3:target ~ .image-container{
-  left: -800px;
-}
-#slider-image-4:target ~ .image-container{
-  left: -1200px;
-}
-#slider-image-5:target ~ .image-container{
-  left: -1600px;
-}
-#slider-image-6:target ~ .image-container{
-  left: -2000px;
-}
-#slider-image-7:target ~ .image-container{
-  left: -2400px;
-}*/
 
 @media (min-width: 524px) {
   .white-card {
@@ -241,78 +104,4 @@ font-size: 24px
   .white-card {
     width: 1000px;
   }
-}
-
-/*.row {
-  overflow: scroll;
-  width: 100%;
-  margin: 0px;
-}
-.row__inner {
-  transition: 450ms -webkit-transform;
-  transition: 450ms transform;
-  transition: 450ms transform, 450ms -webkit-transform;
-  font-size: 0;
-  white-space: nowrap;
-  margin: 40px 0;
-  padding-bottom: 10px;
-}
-.tile {
-  position: relative;
-  display: inline-block;
-  width: 250px;
-  height: 140.625px;
-  margin-right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 450ms all;
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-}
-.tile__img {
-  width: 250px;
-  height: 140.625px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.row__inner:hover {
-  -webkit-transform: translate3d(-62.5px, 0, 0);
-          transform: translate3d(-62.5px, 0, 0);
-}
-.row__inner:hover .tile {
-  opacity: 0.3;
-}
-.row__inner:hover .tile:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  opacity: 1;
-}
-.tile:hover ~ .tile {
-  -webkit-transform: translate3d(125px, 0, 0);
-          transform: translate3d(125px, 0, 0);
-}*/ 
-
-.footer {
-  background: #F4F4F4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0px 50px;
-  color: #9F9F9F;
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: black;
-  opacity: 0.35;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
 }
