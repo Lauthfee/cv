@@ -7,7 +7,6 @@
   display: inline-block;
 }
 
-.header img {
-  float: right;
-  display: inline-block;
+.profile_picture:hover {
+	
 }
